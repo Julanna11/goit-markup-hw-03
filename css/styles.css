@@ -10,6 +10,8 @@
   --button-text-secondary-color: #212121;
   --button-bcg-color: #2196f3;
   --button-secondary-bcg-color: #f5f4fa;
+  
+  --card-set-gap: 30px;
 }
 
 body {
@@ -18,11 +20,35 @@ body {
   font-size: 14px;
   background-color: #ffffff;
   color: var(--primary-text-color);
-  margin: 0;
+}
+
+header {
+  border-bottom: 1px solid #ECECEC;
 }
 
 ul {
   list-style: none;
+}
+
+h1,h2,h3,h4,h5,h6,p,ul{
+  margin: 0;
+  padding: 0;
+  }
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+
+
+.container{
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 1px solid gold;
 }
 
 /* main color: #212121;
@@ -33,7 +59,25 @@ white : #FFFFFF;*/
 /* buttom color background: F5F4FA; */
 
 /* Header */
+
+
+
+
+/* Site nav */
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  background-color: seagreen;
+}
+
+.site-nav{
+  display: flex;
+  align-items: center;
+  }
+
 .logo {
+  display: flex;
   font-family: Raleway;
   font-style: normal;
   font-weight: bold;
@@ -49,13 +93,32 @@ white : #FFFFFF;*/
   text-decoration: none;
 }
 
-/* Site nav */
+.site-nav.list{
+  margin-left: 90px;
+}
 
 .site-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  
   font-weight: 500;
   color: var(--title-text-color);
   text-decoration: none;
 }
+
+/* .site-nav .item:not(:last-child){
+  margin-right: 50px;
+  or 
+  .site-nav .item + .item{
+  margin-left: 50px;
+}
+} */
+
+.site-nav .item + .item{
+  margin-left: 50px;
+}
+
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: var(--accent-text-color);
@@ -63,6 +126,15 @@ white : #FFFFFF;*/
 
 .site-nav .link.current {
   color: var(--accent-text-color);
+}
+
+.contacts{
+  display: flex;
+  margin-left: auto;
+}
+
+.contacts .item + .item{
+  margin-left: 50px;
 }
 
 .contacts-mail,
@@ -92,7 +164,21 @@ white : #FFFFFF;*/
 }
 
 /* Main first section */
+
+.business-decision{
+    text-align: center;
+  background: #2f303a;
+}
+.container.business-decision{
+  height: 600px;
+  padding: 200px 450px;
+}
+
 .decision {
+  margin-top: 0;
+  margin-bottom: var(--card-set-gap);
+  display: block;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -101,7 +187,12 @@ white : #FFFFFF;*/
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
-  background: #2f303a;
+  
+}
+
+.title{
+  display: flex;
+  flex-direction: row;
 }
 
 .section-title {
@@ -112,8 +203,15 @@ white : #FFFFFF;*/
   text-transform: uppercase;
   color: var(--title-text-color);
 }
-
+.section-title-descr {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
 .main-section-title {
+  margin-bottom: 50px;
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
@@ -123,13 +221,12 @@ white : #FFFFFF;*/
   color: var(--title-text-color);
 }
 
-.section-title-descr {
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: var(--primary-text-color);
+.main-section-title-img{
+  display: flex;
+  flex-direction:row;
+  justify-content: space-between;
 }
+
 
 /* Our team */
 .main-team{
@@ -151,8 +248,14 @@ background-color:var(--second-background-color);
 
 /* Button */
 
+
+.filters{
+  display: inline-block;
+  justify-content: space-between;
+}
+
 .button {
- font-family: inherit;
+   font-family: inherit;
 font-weight: 500;
 font-size: 16px;
 line-height: 1.63;
@@ -176,6 +279,7 @@ letter-spacing: 0.03em;
 /* Portfolio */
 
 .projects-title {
+  margin-bottom: 4px;
   font-weight: bold;
   font-size: 18px;
   line-height: 2;
@@ -190,6 +294,42 @@ letter-spacing: 0.03em;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
+
+
+/* card-set */
+
+.section {
+padding-top: 94px;
+padding-bottom: 94px;
+}
+
+
+.card-set{
+padding: 0;
+margin: 0;
+display: flex;
+flex-wrap: wrap;
+margin-left: calc(-1 * var(--card-set-gap));
+margin-top: calc(-1 * var(--card-set-gap));
+  outline: 1px solid blue;
+}
+
+.card-set .item{
+ flex-basis: calc(100% / 3 - 30px);
+ margin-left: var(--card-set-gap); 
+ margin-top: var(--card-set-gap);
+ 
+ outline: 1 px solid blue;
+}
+
+.card {
+  border-bottom: 1px solid #EEEEEE;
+}
+
+ .card-content {
+   padding: 20px 24px;
+ }
+
 
 /* Footer */
 
@@ -228,4 +368,6 @@ letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
 }
+
+
 
