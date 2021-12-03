@@ -15,54 +15,55 @@
         integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/styles.css">
-
-
 </head>
 
 <body>
     <header>
-        <nav>
-            <a class="logo" href=""><span class="logo-web">Web</span>Studio</a>
+        <div class="container main-nav">
+            <nav class="site-nav">
+                <a class="logo item" href=""><span class="logo-web">Web</span>Studio</a>
 
-            <ul class="site-nav list">
-                <li>
-                    <a href="./index.html" class="link current">Студия</a>
-                </li>
-                <li>
-                    <a href="./portfolio.html" class="link">Портфолио</a>
-                </li>
-                <li>
-                    <a href="" class="link">Контакты</a>
-                </li>
+                <ul class="site-nav list">
+                    <li class="item">
+                        <a href="./index.html" class="link current">Студия</a>
+                    </li>
+                    <li class="item">
+                        <a href="./portfolio.html" class="link">Портфолио</a>
+                    </li>
+                    <li class="item">
+                        <a href="" class="link">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <ul class="contacts">
+                <li class="item"><a class="contacts-mail current" href="info@devstudio.com">info@devstudio.com</a> </li>
+                <li class="item"><a class="contacts-phone" href="+380961111111">+38 096 111 11 11</a></li>
             </ul>
-        </nav>
-
-        <ul class="contacts">
-            <li><a class="contacts-mail" href="info@devstudio.com">info@devstudio.com</a> </li>
-            <li><a class="contacts-phone" href="+380961111111">+38 096 111 11 11</a></li>
-        </ul>
+        </div>
     </header>
 
     <main>
         <section class="section projects">
-            <ul class="filters">
-                <li class="item">
-                    <button type="button" class="button primary">Все</button>
-                </li>
-                <li>
-                    <button type="button" class="button secondary">Веб-сайты</button>
-                </li>
-                <li>
-                    <button type="button" class="button secondary">Приложения</button>
-                </li>
-                <li>
-                    <button type="button" class="button secondary">Дизайн</button>
-                </li>
-                <li>
-                    <button type="button" class="button secondary">Маркетинг</button>
-                </li>
-            </ul>
-
+            <div class="container">
+                <ul class="filters">
+                    <li class="item">
+                        <button type="button" class="button primary">Все</button>
+                    </li>
+                    <li class="item">
+                        <button type="button" class="button secondary">Веб-сайты</button>
+                    </li>
+                    <li class="item">
+                        <button type="button" class="button secondary">Приложения</button>
+                    </li>
+                    <li class="item">
+                        <button type="button" class="button secondary">Дизайн</button>
+                    </li>
+                    <li class="item">
+                        <button type="button" class="button secondary">Маркетинг</button>
+                    </li>
+                </ul>
+            </div>
 
 
             <!-- H1 IN MIND -->
@@ -82,102 +83,102 @@
                         </article>
                     </li>
 
-                    
-                    <li class="item">
-                        <article class="card">
-                        <div class="card-thumb">
-                        <img src="./images/project1.jpg" alt="постер" width="370">
-                        </div>
-
-                        <div class="card-content">
-                        <h2 class="projects-title">Постер New Orlean vs Golden Star</h2>
-                        <p class="projects-desrc">Дизайн</p>
-                    </div>
-                </article>
-                    </li>
 
                     <li class="item">
                         <article class="card">
                             <div class="card-thumb">
-                        <img src="./images/project2.jpg" alt="ресторан" width="370">
-                        </div>
+                                <img src="./images/project1.jpg" alt="постер" width="370">
+                            </div>
 
-                        <div class="card-content">
-                        <h2 class="projects-title">Ресторан Seafood</h2>
-                        <p class="projects-desrc">Приложение</p>
-                        </div>
+                            <div class="card-content">
+                                <h2 class="projects-title">Постер New Orlean vs Golden Star</h2>
+                                <p class="projects-desrc">Дизайн</p>
+                            </div>
                         </article>
                     </li>
 
                     <li class="item">
                         <article class="card">
                             <div class="card-thumb">
-                        <img src="./images/project3.jpg" alt="веб-сайт" width="370">
-                        </div>
-                        <div class="card-content">
-                        <h2 class="projects-title">Проект Prime</h2>
-                        <p class="projects-desrc">Маркетинг</p>
-                        </div>
+                                <img src="./images/project2.jpg" alt="ресторан" width="370">
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="projects-title">Ресторан Seafood</h2>
+                                <p class="projects-desrc">Приложение</p>
+                            </div>
                         </article>
                     </li>
 
                     <li class="item">
                         <article class="card">
                             <div class="card-thumb">
-                        <img src="./images/project4.jpg" alt="веб-сайт" width="370">
-                        </div>
-                        <div class="card-content">
-                        <h2 class="projects-title">Проект Boxes</h2>
-                        <p class="projects-desrc">Приложение</p>
-                        </div>
+                                <img src="./images/project3.jpg" alt="веб-сайт" width="370">
+                            </div>
+                            <div class="card-content">
+                                <h2 class="projects-title">Проект Prime</h2>
+                                <p class="projects-desrc">Маркетинг</p>
+                            </div>
                         </article>
                     </li>
 
                     <li class="item">
                         <article class="card">
-                        <div class="card-thumb">
-                        <img src="./images/project5.jpg" alt="веб-сайт" width="370">
-                        </div>
-                        <div class="card-content">
-                        <h2 class="projects-title">Inspiration has no Borders</h2>
-                        <p class="projects-desrc">Веб-сайт</p>
-                        </div>
+                            <div class="card-thumb">
+                                <img src="./images/project4.jpg" alt="веб-сайт" width="370">
+                            </div>
+                            <div class="card-content">
+                                <h2 class="projects-title">Проект Boxes</h2>
+                                <p class="projects-desrc">Приложение</p>
+                            </div>
                         </article>
                     </li>
 
                     <li class="item">
                         <article class="card">
-                        <div class="card-thumb">
-                        <img src="./images/project6.jpg" alt="веб-сайт" width="370">
-                        </div>
-                        <div class="card-content">
-                        <h2 class="projects-title">Издание Limited Edition</h2>
-                        <p class="projects-desrc">Веб-сайт</p>
-                        </div>
+                            <div class="card-thumb">
+                                <img src="./images/project5.jpg" alt="веб-сайт" width="370">
+                            </div>
+                            <div class="card-content">
+                                <h2 class="projects-title">Inspiration has no Borders</h2>
+                                <p class="projects-desrc">Веб-сайт</p>
+                            </div>
                         </article>
                     </li>
 
                     <li class="item">
                         <article class="card">
-                        <div class="card-thumb">
-                        <img src="./images/project7.jpg" alt="веб-сайт" width="370">
-                        </div>
-                        <div class="card-content">
-                        <h2 class="projects-title">Проект LAB</h2>
-                        <p class="projects-desrc">Маркетинг</p>
-                        </div>
+                            <div class="card-thumb">
+                                <img src="./images/project6.jpg" alt="веб-сайт" width="370">
+                            </div>
+                            <div class="card-content">
+                                <h2 class="projects-title">Издание Limited Edition</h2>
+                                <p class="projects-desrc">Веб-сайт</p>
+                            </div>
                         </article>
                     </li>
 
                     <li class="item">
                         <article class="card">
-                        <div class="card-thumb">
-                        <img src="./images/project8.jpg" alt="веб-сайт" width="370">
-                        </div>
-                        <div class="card-content">
-                        <h2 class="projects-title">Growing Business</h2>
-                        <p class="projects-desrc">Приложение</p>
-                        </div>
+                            <div class="card-thumb">
+                                <img src="./images/project7.jpg" alt="веб-сайт" width="370">
+                            </div>
+                            <div class="card-content">
+                                <h2 class="projects-title">Проект LAB</h2>
+                                <p class="projects-desrc">Маркетинг</p>
+                            </div>
+                        </article>
+                    </li>
+
+                    <li class="item">
+                        <article class="card">
+                            <div class="card-thumb">
+                                <img src="./images/project8.jpg" alt="веб-сайт" width="370">
+                            </div>
+                            <div class="card-content">
+                                <h2 class="projects-title">Growing Business</h2>
+                                <p class="projects-desrc">Приложение</p>
+                            </div>
                         </article>
                     </li>
                 </ul>
@@ -186,16 +187,17 @@
     </main>
 
     <footer class="footer">
-        <a class="logo-footer" href=""><span class="logo-web">Web</span>Studio</a>
-        <address>
-            <ul>
-                <li><a class="footer-address" href="">г. Киев, пр-т Леси Украинки, 26</a> </li>
-                <li><a class="footer-mail" href="info@devstudio.com">info@devstudio.com</a></li>
-                <li><a class="footer-phone" href="+380961111111">+38 096 111 11 11</a></li>
-            </ul>
-        </address>
+        <div class="container footer">
+            <a class="logo-footer" href=""><span class="logo-web">Web</span>Studio</a>
+            <address>
+                <ul class="address">
+                    <li class="item"><a class="footer-address" href="">г. Киев, пр-т Леси Украинки, 26</a> </li>
+                    <li class="item"><a class="footer-mail" href="info@devstudio.com">info@devstudio.com</a></li>
+                    <li><a class="footer-phone" href="+380961111111">+38 096 111 11 11</a></li>
+                </ul>
+            </address>
+        </div>
     </footer>
 
 </body>
-
 </html>
