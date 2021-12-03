@@ -171,10 +171,6 @@ white : #FFFFFF;*/
   padding: 200px 200px;
 }
 
-/* .container.business-decision {
-  height: 600px;
-} */
-
 .decision {
   margin-top: 0;
   margin-bottom: var(--card-set-gap);
