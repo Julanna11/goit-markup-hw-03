@@ -168,7 +168,8 @@ white : #FFFFFF;*/
 .business-decision {
   text-align: center;
   background: #2f303a;
-  padding: 200px 200px;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .decision {
@@ -390,13 +391,10 @@ white : #FFFFFF;*/
 
 /* Footer */
 
-.footer {
+.footer {  
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: var(--bcg-color-footer);
-}
-
-.container.footer {
-  height: 250px;
-  padding: 60px 0px 60px 0px;
 }
 
 .logo-footer {
@@ -415,9 +413,7 @@ white : #FFFFFF;*/
 .address .item {
   margin-bottom: 9px;
 }
-.address {
-  margin-bottom: 60px;
-}
+
 .footer-address {
   font-style: normal;
   font-weight: normal;
